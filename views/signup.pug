@@ -6,15 +6,17 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
     body
-        form(action="#" method="POST")
+        form(action="/api/user/register" method="POST")
             div
                 label(htmlFor="email") EMAIL
-                input(type="text" name="email" id="email")
+                input(type="email" name="email" id="email" required)
             div 
                 label(htmlFor="password") PASSWORD
-                input(type="password" name="password" id="password")
+                input(type="password" name="password" id="password" required)
             div
                 label(htmlFor="nickname") NICKNAME
-                input(type="text" name="nickname" id="nickname")
+                input(type="text" name="nickname" id="nickname" required)
             
             input(type="submit" value="SIGN UP")
+
+        
